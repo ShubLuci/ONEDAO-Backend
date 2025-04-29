@@ -1,0 +1,32 @@
+{
+  "name": "onedao-backend",
+  "version": "1.0.0",
+  "description": "RESTful API for ONEDAO Backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShubLuci/ONEDAO-Backend.git"
+  },
+  "keywords": [
+    "Javascript",
+    "NodeJS",
+    "Express",
+    "PostgreSQL"
+  ],
+  "author": "Shubham Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShubLuci/ONEDAO-Backend/issues"
+  },
+  "homepage": "https://github.com/ShubLuci/ONEDAO-Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.15.6",
+    "sequelize": "^6.37.7"
+  }
+}
