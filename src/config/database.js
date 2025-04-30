@@ -1,5 +1,6 @@
 const sequelize = require('./seqObj');
 
+// Connect to Postgres Database
 async function dbConnection() {
     try {
         await sequelize.authenticate();

@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 
 const sequelize = require('../config/seqObj');
 
-// Define the Schema for table 'Lot' with all variables and their types
+// Define the Schema for table 'Users' with all variables and their types
 const Users = sequelize.define('Users', {
     email: {
         type: DataTypes.STRING,

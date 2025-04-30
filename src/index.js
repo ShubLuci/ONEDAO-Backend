@@ -9,6 +9,7 @@ const app = express();
 
 const EXPRESS_PORT = process.env.EXPRESS_PORT;
 
+// IIFE to setup express server and PostgreSQL database
 (async () => {
     try {
         app.listen(EXPRESS_PORT, () => {
@@ -20,8 +21,10 @@ const EXPRESS_PORT = process.env.EXPRESS_PORT;
     }
 })();
 
-app.use(express.json());
-app.use(cors());
 
-app.use('/',userRoutes);
-app.use('/',productRoutes);
+app.use(express.json());        // For parsing json response
+app.use(cors());                // For enabling CORS
+
+
+app.use('/',userRoutes);        // User API Routes
+app.use('/',productRoutes);     // Product API Routes

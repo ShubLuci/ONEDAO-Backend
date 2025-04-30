@@ -1,5 +1,6 @@
 const {Sequelize} = require('sequelize');
 
+// Export the Sequlize postgres logged obj for creating models or authenticating Postgre SQL database
 const sequelize = new Sequelize(
     process.env.DB_DATABASE,
     process.env.DB_USERNAME,
